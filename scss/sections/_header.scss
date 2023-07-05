@@ -11,4 +11,20 @@
 .header__list{
   display: flex;
   gap: 15px;
+  &-link{
+    color: var(--header-nav-color);
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+
+    &:before{
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
 }
