@@ -1,0 +1,27 @@
+.story{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  background: url("../content/about_bg.jpg")  center/cover;
+
+  &__content{
+    max-width: 625px;
+    &-title{
+      margin-bottom: 50px;
+      color: #FFF;
+      font-family: var(--font-secondary);
+      font-size: 36px;
+      font-weight: var(--secondary-font-weight);
+    }
+    &-text{
+      color: #FFFFFF;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+  }
+  &__buttons{
+    display: flex;
+    gap: 30px;
+  }
+}
