@@ -18,13 +18,22 @@
     position: relative;
     text-decoration: none;
 
-    &:before{
+    &:after{
       content: "";
       height: 2px;
+      background-color: var(--header-hover-color);
       width: 100%;
       position: absolute;
       top: 100%;
       left: 0;
+      display: none;
+    }
+    &:hover {
+      color: var(--header-hover-color)
+    }
+
+    &:hover:after {
+      display: block;
     }
   }
 }
