@@ -85,6 +85,32 @@
             <img src="content/about%20photo.jpg" alt="about" class="story__img">
         </section>
 
+
+        <section class="appointment container">
+            <h2 class="appointment__title">Записаться на прием</h2>
+            <div class="appointment__info">
+                <div class="appointment__registration">
+                    <input type="text" name="name" id="name" class="input__info" placeholder="Ваше имя *">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="tel" class="input__info" placeholder="Ваш телефон *">
+                    <label for="tel"></label>
+                    <select name="topic" id="appointment_topic" class="input__info">
+                        <option>Тема встречи *</option>
+                    </select>
+                    <label for="appointment_topic"></label>
+                </div>
+                <div class="appointment_msg">
+                    <textarea name="msg" id="msg" placeholder="Пожелания" ></textarea>
+                    <label for="msg"></label>
+                </div>
+            </div>
+            <label for="appoint">
+            <input type="checkbox" name="appointment_checkbox" id="appoint">
+            Я согласен с политикой конфиденциальности
+            </label>
+            <button class="main__btn-fill">Отправить</button>
+        </section>
+
     </main>
 </body>
 </html>
