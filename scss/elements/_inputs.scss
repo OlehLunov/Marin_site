@@ -53,17 +53,18 @@ inputs*/
 }
 #topic{
   padding-left:20px;
-  width: 370px;
+  width: 346px;
   height: 40px;
   border-radius: 10px;
   border: 1px #000000 solid;
   appearance: none;
-  background: url(../img/arrow.png) no-repeat right;
+  background: url(../content/arrow.png) no-repeat right;
   background-position-x: calc(100% - 20px);
   font-family: 'Montserrat',sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.333;
+  cursor: pointer;
 }
 #comments{
   padding:8px 0 0 20px;

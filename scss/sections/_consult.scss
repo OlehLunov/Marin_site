@@ -29,10 +29,10 @@
   &-info{
     grid-row: span 3;
   }
-}
-.consult__accept{
-  padding-top: 40px;
-  grid-column:span 2;
-  justify-content: center;
-  text-align: center;
+  &-accept{
+    padding-top: 40px;
+    grid-column:span 2;
+    align-items: center;
+    text-align: center;
+  }
 }
