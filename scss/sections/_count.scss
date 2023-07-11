@@ -1,0 +1,28 @@
+.count{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: url("../content/counter_bg.jpg")  center/cover;
+  &__content{
+    max-width: 300px;
+    &-number{
+      font-family: Montserrat, sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+    }
+    &-title{
+      font-size: 24px;
+      font-weight: var(--secondary-font-weight);
+      color: #FFFFFF;
+      line-height: 1.333;
+      margin-bottom: 20px;
+    }
+    &-text{
+      color: #FFF;
+    }
+  }
+}
