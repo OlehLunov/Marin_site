@@ -86,29 +86,40 @@
         </section>
 
 
-        <section class="appointment container">
-            <h2 class="appointment__title">Записаться на прием</h2>
-            <div class="appointment__info">
-                <div class="appointment__registration">
-                    <input type="text" name="name" id="name" class="input__info" placeholder="Ваше имя *">
-                    <label for="name"></label>
-                    <input type="text" name="name" id="tel" class="input__info" placeholder="Ваш телефон *">
-                    <label for="tel"></label>
-                    <select name="topic" id="appointment_topic" class="input__info">
-                        <option>Тема встречи *</option>
-                    </select>
-                    <label for="appointment_topic"></label>
+        <section class="consult container">
+
+            <h1 class="consult__head">Записаться на прием</h1>
+
+            <div class="consult__data">
+                <div class="consult__data-info">
+                    <label for="name" class="consult_name">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя *">
+                    </label>
+                    <label for="tel" class="consult_tel">
+                        <input type="tel" name="tel" id="tel" placeholder="Ваш телефон *">
+                    </label>
+                    <label for="topic"  class="consult_topic">
+                        <select name="topic" id="topic">
+                            <option>Тема встречи *</option>
+                        </select>
+                    </label>
                 </div>
-                <div class="appointment_msg">
-                    <textarea name="msg" id="msg" placeholder="Пожелания" ></textarea>
-                    <label for="msg"></label>
+                <div class="consult__data-wishes">
+                    <label for="comments" class="consult_comments">
+                        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Пожелания"></textarea>
+                    </label>
+                </div>
+                <div class="consult__data-accept">
+                    <label for="politic" class="consult_politic">
+                        <input type="checkbox" name="politic" id="politic" class="politic" checked>
+                        <span class="check-style"></span>
+                        Я согласен с политикой конфиденциальности
+                    </label>
                 </div>
             </div>
-            <label for="appoint">
-            <input type="checkbox" name="appointment_checkbox" id="appoint">
-            Я согласен с политикой конфиденциальности
-            </label>
-            <button class="main__btn-fill">Отправить</button>
+            <div class="consult__btn">
+                <button class="main__btn-fill">Отправить</button>
+            </div>
         </section>
 
     </main>

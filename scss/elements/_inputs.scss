@@ -10,3 +10,80 @@
     color: #000;
   }
 }
+
+
+.check-style{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2D5E5E;
+  margin-left: -25px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.politic:checked +.check-style::before{
+  content:"";
+  width: 11px;
+  height: 11px;
+  background-color: #2D5E5E;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*
+inputs*/
+#name,#tel,#sale_tel,#sale_name{
+  padding-left:20px;
+  width: 346px;
+  height: 36px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+}
+#name,#sale_name::placeholder{
+  color: #000000;
+}
+#tel,#sale_tel::placeholder{
+  color: #000000;
+}
+#topic{
+  padding-left:20px;
+  width: 370px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+  appearance: none;
+  background: url(../img/arrow.png) no-repeat right;
+  background-position-x: calc(100% - 20px);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+}
+#comments{
+  padding:8px 0 0 20px;
+  resize: none;
+  width: 348px;
+  height: 170px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+}
+#comments::placeholder{
+  color: #000000;
+}
+#politic,#sale_politic{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding-left:15px;
+}

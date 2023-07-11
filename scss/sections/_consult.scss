@@ -1,0 +1,38 @@
+.consult{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.consult__btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.consult_politic{
+  color: #2D5E5E;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: 'Montserrat',sans-serif;
+}
+.consult__data{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 370px 370px;
+  column-gap: 30px;
+  &-info{
+    grid-row: span 3;
+  }
+}
+.consult__accept{
+  padding-top: 40px;
+  grid-column:span 2;
+  justify-content: center;
+  text-align: center;
+}
