@@ -44,32 +44,59 @@
   }
 }
 
-.author__butt {
-  font-size: 0;
-  color: transparent;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+#slider {
+  width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.author_butt::after{
+.slider-container {
+  width: 1800px; /* 600px * 3 */
+  display: flex;
+  transition: transform 0.5s ease;
+  transform: translateX(0); /* Начальное смещение */
+}
+
+.slider-controls {
+  position: absolute;
+  top: 55%;
+  left: -45px;
+  right: -45px;
+  text-align: center;
+}
+
+.slider-control-prev,
+.slider-control-next {
+  display: inline-block;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.slider-control-prev::after,
+.slider-control-next::after {
   content: "";
   display: block;
   width: 17px;
   height: 17px;
   cursor: pointer;
-  border-top: 2px solid #ADDDDE;
-  border-left: 2px solid #ADDDDE;
+  border-top: 3px solid #ADDDDE;
+  border-left: 3px solid #ADDDDE;
+}
 
-}
-.author_butt--prev{
-  left: 20%;
-  transform: rotate(-45deg);
-}
-.author_butt--next{
-  right: 20%;
+.slider-control-prev {
+  left: 25%;
   transform: rotate(135deg);
+}
+
+.slider-control-next {
+  right: 25%;
+  transform: rotate(-45deg);
 }
 
 

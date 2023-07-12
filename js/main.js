@@ -1,30 +1,50 @@
-/*слайдер*/
+window.onload = function() {
+    var sliderContainer = document.querySelector(".slider-container");
+    var reviews = document.querySelectorAll(".reviews__item");
+    var slideWidth = reviews[0].offsetWidth;
+    var slideInterval;
 
-var slides = document.querySelectorAll('.reviews__item .reviews__item2 .reviews__item3');
-var currentSlide=0;
+    // Добавление обработчиков событий на кнопки-стрелки
+    var prevButton = document.querySelector(".slider-control-prev");
+    prevButton.addEventListener("click", prevSlide);
 
-function showSlide() {
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('active');
+    var nextButton = document.querySelector(".slider-control-next");
+    nextButton.addEventListener("click", nextSlide);
+
+    // Запуск автоматического переключения слайдов
+    startSlideShow();
+
+    function prevSlide() {
+        sliderContainer.style.transition = "none";
+        sliderContainer.style.transform = `translateX(${slideWidth}px)`;
+
+        // Перемещение последнего слайда перед первым
+        var lastSlide = reviews[reviews.length - 1];
+        sliderContainer.insertBefore(lastSlide, reviews[0]);
+
+        // Добавление задержки перед анимацией
+        setTimeout(function() {
+            sliderContainer.style.transition = "transform 0.5s ease";
+            sliderContainer.style.transform = "translateX(0)";
+        }, 10);
     }
-}
-slides[currentSlide].classList.add('active');
 
-function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
+    function nextSlide() {
+        sliderContainer.style.transition = "transform 0.5s ease";
+        sliderContainer.style.transform = `translateX(-${slideWidth}px)`;
+
+        // Перемещение первого слайда после последнего
+        var firstSlide = reviews[0];
+        sliderContainer.appendChild(firstSlide);
+
+        // Добавление задержки перед анимацией
+        setTimeout(function() {
+            sliderContainer.style.transition = "none";
+            sliderContainer.style.transform = "translateX(0)";
+        }, 500);
     }
-    showSlide();
-}
 
-function previousSlide() {
-    currentSlide--;
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
+    function startSlideShow() {
+        slideInterval = setInterval(nextSlide, 10000);
     }
-    showSlide();
-}
-
-showSlide();
-
+};
