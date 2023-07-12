@@ -1,0 +1,145 @@
+.review{
+  padding-top: 60px;
+  padding-bottom: 70px;
+  position: relative;
+  &__title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: 'Oswald',sans-serif;
+    font-weight: var(--secondary-font-weight);
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+  }
+}
+.reviews__item{
+  background:#ADDDDE;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  &-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    color: #000000;
+    width: 550px;
+  }
+}
+.review__person{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 30px;
+  &-name{
+    font-size: 18px;
+    line-height: 1.333;
+    color: #2D5E5E;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.reviews{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.reviews__content{
+  position: relative;
+  padding: 0 285px;
+  width: 600px;
+  min-height: 260px;
+  &-text{
+    text-align: center;
+    font-weight: 300;
+    color: #000000;
+    width: 550px;
+  }
+}
+.reviews__item{
+  background:#ADDDDE;
+  padding: 20px 25px;
+}
+.reviews__title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family: 'Oswald',sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+.reviews__author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  &-img{
+    margin-right: 32px;
+  }
+  &-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.333;
+    color: #2D5E5E;
+  }
+}
+.author__butt {
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.author_butt::after{
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border-top: 2px solid #ADDDDE;
+  border-left: 2px solid #ADDDDE;
+
+}
+.author_butt--prev{
+  left: 20%;
+  transform: rotate(-45deg);
+}
+.author_butt--next{
+  right: 20%;
+  transform: rotate(135deg);
+}
+
+*/
+
