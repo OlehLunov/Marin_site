@@ -44,7 +44,33 @@
   }
 }
 
+.author__butt {
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
 
+.author_butt::after{
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border-top: 2px solid #ADDDDE;
+  border-left: 2px solid #ADDDDE;
+
+}
+.author_butt--prev{
+  left: 20%;
+  transform: rotate(-45deg);
+}
+.author_butt--next{
+  right: 20%;
+  transform: rotate(135deg);
+}
 
 
 

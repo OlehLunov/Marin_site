@@ -1,6 +1,6 @@
 /*слайдер*/
 
-var slides = document.querySelectorAl('reviews__item');
+var slides = document.querySelectorAll('.reviews__item .reviews__item2 .reviews__item3');
 var currentSlide=0;
 
 function showSlide() {
