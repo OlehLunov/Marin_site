@@ -59,10 +59,11 @@
 
 .slider-controls {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: -45px;
   right: -45px;
   text-align: center;
+  transform: translateY(-50%);
 }
 
 .slider-control-prev,
@@ -90,13 +91,16 @@
 }
 
 .slider-control-prev {
+  position: relative;
   left: 25%;
-  transform: rotate(135deg);
+  top: 10px;
+  transform: translateY(-50%) rotate(135deg);
 }
 
 .slider-control-next {
+  position: relative;
   right: 25%;
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 

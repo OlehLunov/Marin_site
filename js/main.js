@@ -16,7 +16,7 @@ window.onload = function() {
 
     function prevSlide() {
         sliderContainer.style.transition = "none";
-        sliderContainer.style.transform = `translateX(${slideWidth}px)`;
+        sliderContainer.style.transform = `translateX(${-slideWidth}px)`;
 
         // Перемещение последнего слайда перед первым
         var lastSlide = reviews[reviews.length - 1];
@@ -31,7 +31,7 @@ window.onload = function() {
 
     function nextSlide() {
         sliderContainer.style.transition = "transform 0.5s ease";
-        sliderContainer.style.transform = `translateX(-${slideWidth}px)`;
+        sliderContainer.style.transform = `translateX(${-slideWidth}px)`;
 
         // Перемещение первого слайда после последнего
         var firstSlide = reviews[0];
