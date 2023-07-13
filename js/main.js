@@ -1,3 +1,4 @@
+/*review slider*/
 window.onload = function() {
     var sliderContainer = document.querySelector(".slider-container");
     var reviews = document.querySelectorAll(".reviews__item");
@@ -48,3 +49,6 @@ window.onload = function() {
         slideInterval = setInterval(nextSlide, 10000);
     }
 };
+/*review slider*/
+
+

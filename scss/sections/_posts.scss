@@ -1,0 +1,14 @@
+.posts{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: url("../content/posts_bg.jpg")  center/cover;
+}
+.posts__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 84px;
+  margin-top: 55px;
+}
+.posts__item{
+  max-width: 335px;
+}
