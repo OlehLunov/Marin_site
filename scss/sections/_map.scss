@@ -1,0 +1,30 @@
+.map{
+  background: url("../content/map.jpg") center/cover;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map__contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #ADDDDE;
+  padding: 30px 130px 30px 30px;
+  &-title{
+    color: #2D5E5E;
+    font-family: Oswald,sans-serif;
+    font-size: 48px;
+    font-weight: var(--secondary-font-weight);
+  }
+}
+
+.map__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &-link{
+    color: #000;
+  }
+}

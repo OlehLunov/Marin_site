@@ -49,13 +49,6 @@
   animation: rotateOpen 0.3s ease-in-out;
   margin-right: 20px;
 }
-.questions__details-summary.closed summary {
-  color: black;
-}
-.questions__details-summary.open summary {
-  color: #2D5E5E;
-}
-
 @keyframes rotateClosed {
   from {
     transform: rotate(0deg);
