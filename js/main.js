@@ -52,10 +52,18 @@ window.onload = function() {
 /*review slider*/
 
 /*questions details*/
-var summary = document.querySelector(".questions__details-summary");
+var summaries = document.querySelectorAll(".questions__details-summary");
 
-summary.addEventListener("click", function() {
-    summary.classList.toggle("closed");
-    summary.classList.toggle("open");
+summaries.forEach(function(summary) {
+    summary.addEventListener("click", function() {
+        summary.classList.toggle("open");
+
+        if (summary.classList.contains("open")) {
+            summary.style.color = "#2D5E5E";
+        } else {
+            summary.style.color = "black";
+        }
+    });
 });
+
 /*questions details*/

@@ -9,26 +9,27 @@
     margin-bottom: 80px;
   }
 }
-
 .questions__content{
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.questions__details-summary{
+  color: #000;
+  font-family: Oswald,sans-serif;
+  font-size: 24px;
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.333;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.questions__details-text{
+  color: #000;
+  padding-left: 42px;
+  margin-top: 20px;
+  max-width: 900px;
+}
 
 .questions__details-summary.closed .marker::before {
   content: url("../../content/vector_2.svg");
@@ -36,6 +37,7 @@
   transform-origin: center;
   display: inline-block;
   animation: rotateClosed 0.3s ease-in-out;
+  margin-right: 20px;
 }
 
 /* Стили для открытого маркера */
@@ -45,6 +47,13 @@
   transform-origin: center;
   display: inline-block;
   animation: rotateOpen 0.3s ease-in-out;
+  margin-right: 20px;
+}
+.questions__details-summary.closed summary {
+  color: black;
+}
+.questions__details-summary.open summary {
+  color: #2D5E5E;
 }
 
 @keyframes rotateClosed {
