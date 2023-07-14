@@ -51,4 +51,11 @@ window.onload = function() {
 };
 /*review slider*/
 
+/*questions details*/
+var summary = document.querySelector(".questions__details-summary");
 
+summary.addEventListener("click", function() {
+    summary.classList.toggle("closed");
+    summary.classList.toggle("open");
+});
+/*questions details*/

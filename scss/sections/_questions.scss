@@ -1,0 +1,70 @@
+.questions{
+  padding-top: 51px;
+  padding-bottom: 60px;
+  &__title{
+    text-align: center;
+    font-family: Oswald,sans-serif;
+    font-size: 48px;
+    font-weight: var(--secondary-font-weight);
+    margin-bottom: 80px;
+  }
+}
+
+.questions__content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.questions__details-summary.closed .marker::before {
+  content: url("../../content/vector_2.svg");
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  display: inline-block;
+  animation: rotateClosed 0.3s ease-in-out;
+}
+
+/* Стили для открытого маркера */
+.questions__details-summary.open .marker::before {
+  content: url("../../content/vector_1.svg");
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  display: inline-block;
+  animation: rotateOpen 0.3s ease-in-out;
+}
+
+@keyframes rotateClosed {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotateOpen {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+summary {
+  list-style-type: none;
+}

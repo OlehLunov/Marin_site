@@ -2,6 +2,12 @@
   padding-top: 60px;
   padding-bottom: 30px;
   background: url("../content/posts_bg.jpg")  center/cover;
+  &__title{
+    color: #FFF;
+    font-family: Oswald,sans-serif;
+    font-weight: var(--secondary-font-weight);
+    font-size: 48px;
+  }
 }
 .posts__content{
   display: flex;
@@ -11,4 +17,13 @@
 }
 .posts__item{
   max-width: 335px;
+  &-head{
+    margin-top: 25px;
+    color: #FFF;
+    font-family: Oswald,sans-serif;
+    font-size: 24px;
+    font-weight:  var(--secondary-font-weight);
+    line-height: 1.333;
+    max-width: 334px;
+  }
 }
