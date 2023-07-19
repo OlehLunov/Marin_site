@@ -1,0 +1,20 @@
+.sale{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  &__title{
+    margin-bottom: 60px;
+  }
+}
+.sale__content{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.sale__data-accept{
+  margin-top: 30px;
+}

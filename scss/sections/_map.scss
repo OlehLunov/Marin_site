@@ -26,5 +26,9 @@
   gap: 10px;
   &-link{
     color: #000;
+    &:hover{
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
   }
 }

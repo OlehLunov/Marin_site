@@ -31,13 +31,46 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.sale_politic:checked +.check-style::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-color: #2D5E5E;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*
 inputs*/
-#name,#tel,#sale_tel,#sale_name{
+#name,#tel{
   padding-left:20px;
   width: 346px;
   height: 36px;
   margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+}
+#sale_tel{
+  padding-left:20px;
+  width: 370px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px #000000 solid;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.333;
+}
+#sale_name{
+  padding-left:20px;
+  width: 370px;
+  height: 40px;
   border-radius: 10px;
   border: 1px #000000 solid;
   font-family: 'Montserrat',sans-serif;

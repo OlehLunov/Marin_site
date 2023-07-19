@@ -35,3 +35,21 @@
     background: var(--btn-background);
   }
 }
+
+.main__btn-sale{
+  background: var(--btn-background);
+  width: 370px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.333;
+  height: 40px;
+  color: #FFFFFF;
+  &:hover{
+    cursor: pointer;
+    background: none;
+    color: #000000;
+    border: 3px solid #2D5E5E;
+  }
+}
