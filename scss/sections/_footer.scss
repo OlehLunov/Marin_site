@@ -20,4 +20,13 @@
     width: 18px;
     height: 18px;
   }
+  &-link{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.714;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
