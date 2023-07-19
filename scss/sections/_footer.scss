@@ -1,0 +1,23 @@
+.footer{
+  padding-bottom: 83px;
+  padding-top: 83px;
+  background: #2D5E5E;
+  display: flex;
+  gap: 30px;
+  &__link{
+
+    &-logo{
+      margin-right: 50px;
+    }
+  }
+}
+
+.footer__item{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
